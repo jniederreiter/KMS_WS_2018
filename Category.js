@@ -89,3 +89,14 @@ function addCat() {
     var newCat = new Category(category.length, title, color);
     createCat(newCat);
 }
+
+function getLength() {
+    return category.length;
+}
+
+
+QUnit.test( 'getLength()', function( assert ) {
+
+
+    assert.ok(getLength() == 0, "Passed!" );
+});
