@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="https://www.filterblade.xyz/css.min.css?v=098l">
+
+    <script src="Category.js"></script>
+    <script src="GlobalFunctions.js"></script>
+    <script src="User.js"></script>
+    <script src="https://www.filterblade.xyz/jquery-3.2.1.js"></script>
+    <script src="https://www.filterblade.xyz/libs/http_code.jquery.com_ui_1.12.1_jquery-ui.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://www.filterblade.xyz/libs/darkjquery-ui.css">
+
+    <style>
+        .myBody, #myBody {
+            background: gray;
+            color: black !important;
+        }
+    </style>
+</head>
+<body onload="initAll()">
+
+<div id="ModalBox_Outer" style="display: none;" onclick="hideModalBox(event)">
+    <div id="ModalBox_Container">
+        <button id="ModalBoxCloseBtn" onclick="hideModalBox(event)">x</button>
+        <div id="ModalBox_Content">
+            <label>...</label>
+        </div>
+    </div>
+</div>
+
+<div id="myBody" class="myBody">
+    <div id="userlogin">
+    <input id="username" type="text" placeholder="Name">
+    <input id="password" type="password" placeholder="Password">
+    <button onclick="login()" >Login</button>
+        <label id="loginLabel"></label>
+    </div>
+    <!--<label>Aufgabe:-->
+    <input id="catTitle" type="text">
+    <input id="color" type="color">
+    <!--</label>-->
+    <button onclick="addCat()" >new Category</button>
+    <div id="mainContainer"></div>
+
+</div>
+
+</body>
+</html>
