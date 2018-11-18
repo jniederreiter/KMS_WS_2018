@@ -94,6 +94,9 @@ function getLength() {
     return category.length;
 }
 
+function addonetwo(){
+    return 1+2;
+}
 
 QUnit.test( 'getLength()', function( assert ) {
 
